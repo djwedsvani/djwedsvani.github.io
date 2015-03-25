@@ -176,6 +176,9 @@ table {
   display: inline-block;
   vertical-align: middle;
 }
+.overflow-hidden {
+  overflow: hidden;
+}
 .active-url {
   background-color: #7656ac;
 }
@@ -243,6 +246,19 @@ table {
 .text-content .request a:active {
   text-decoration: none;
   outline: none;
+}
+.text-content .map {
+  width: 340px;
+  float: left;
+}
+.text-content .map iframe {
+  width: 300px;
+  height: 300px;
+}
+.text-content .event-details {
+  width: 340px;
+  float: right;
+  text-align: center;
 }
 .main-content {
   z-index: 30;
