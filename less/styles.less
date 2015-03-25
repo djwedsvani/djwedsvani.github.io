@@ -1,0 +1,97 @@
+@import "reset";
+
+//variables
+
+@white : #fff;
+@black : #000;
+@nav-text-color : #fefefe;
+@tpl-text-color : #ededed;
+@btn-color : #7656ac;
+
+//Helper Classes
+.inline-middle{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.active-url{
+  background-color: @btn-color;
+}
+
+//Background Image
+.bg-img{
+  background: url('../img/bg.png');
+  width: 100%;
+}
+
+//Om Logo
+.head-logo{
+  height: 100px;
+  width: 100px;
+  margin:0 auto;
+  padding: 15px 0px;
+}
+
+//Navigation Menu
+.nav-menus{
+  text-align: center;
+  padding: 20px 0px;
+  .btn{
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 120px;
+    margin: 0px 5px;
+    font-family: 'Lato';
+    // background-color: #b8a1df;
+    a{
+      text-decoration: none;
+      outline:none;
+      color: @nav-text-color;
+      &:visited, &:focus, &:active {
+        text-decoration: none;
+        outline:none;
+      }
+    }
+    &:hover{
+      background-color: @btn-color;
+      cursor: pointer;
+    }
+  }
+}
+
+.name{
+  text-align: center;
+  padding: 5px;
+  img{
+    width:400px;
+  }
+}
+
+.text-content{
+  text-align: center;
+  line-height: 20px;
+  font-family: 'Lato';
+  background-color: rgba(0,0,0,0.4);
+  padding: 20px 10px; 
+  margin: 20px 0px;
+  .request{
+    a{
+      text-decoration: none;
+      outline:none;
+      color: @btn-color;
+      &:visited, &:focus, &:active {
+        text-decoration: none;
+        outline:none;
+      }
+    }
+  }
+}
+
+//Main Content
+
+.main-content{
+  max-width:700px;
+  margin:0 auto;
+  color: @tpl-text-color;
+  font-family: 'Lato'
+}

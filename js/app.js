@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
 
 	$('.bg-img').width($(window).width());
