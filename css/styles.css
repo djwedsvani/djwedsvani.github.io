@@ -180,12 +180,14 @@ table {
   background-color: #7656ac;
 }
 .bg-img {
-  background: url('../img/bg.png') center repeat-y;
+  background: url('../img/bg.png');
+  position: fixed;
   width: 100%;
+  z-index: -29;
 }
 .head-logo {
-  height: 100px;
-  width: 100px;
+  height: 150px;
+  width: 150px;
   margin: 0 auto;
   padding: 15px 0px;
 }
@@ -204,6 +206,7 @@ table {
   text-decoration: none;
   outline: none;
   color: #fefefe;
+  font-size: 18px;
 }
 .nav-menus .btn a:visited,
 .nav-menus .btn a:focus,
@@ -212,7 +215,7 @@ table {
   outline: none;
 }
 .nav-menus .btn:hover {
-  background-color: #7656ac;
+  background-color: rgba(130, 96, 189, 0.52);
   cursor: pointer;
 }
 .name {
@@ -242,6 +245,7 @@ table {
   outline: none;
 }
 .main-content {
+  z-index: 30;
   max-width: 700px;
   margin: 0 auto;
   color: #ededed;
