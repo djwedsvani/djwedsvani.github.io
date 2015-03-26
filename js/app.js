@@ -3,11 +3,11 @@ $(document).ready(function(){
 	$('.bg-img').width($(document).width());
 	$('.bg-img').height($(document).height());
 
-	// $(window).resize(function(){
- //        console.log('in-resize');
-	// 	$('.bg-img').width($(window).width());
-	// 	$('.bg-img').height($(window).height());
-	// });
+	$(window).resize(function(){
+        console.log('in-resize');
+		$('.bg-img').width($(window).width());
+		$('.bg-img').height($(window).height());
+	});
 
 });
 

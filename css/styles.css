@@ -172,6 +172,12 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.clearboth {
+  clear: both;
+}
+.font18px {
+  font-size: 18px;
+}
 .inline-middle {
   display: inline-block;
   vertical-align: middle;
@@ -184,9 +190,6 @@ table {
 }
 .bg-img {
   background: url('../img/bg.png');
-  position: fixed;
-  width: 100%;
-  z-index: -29;
 }
 .head-logo {
   height: 150px;
@@ -260,8 +263,44 @@ table {
   float: right;
   text-align: center;
 }
+.text-content .download {
+  background-color: #7656ac;
+  border-radius: 5px;
+  padding: 5px 0px;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  color: #ffffff;
+  width: 340px;
+  display: block;
+}
+.text-content .download:visited,
+.text-content .download:focus,
+.text-content .download:active {
+  text-decoration: none;
+  outline: none;
+}
+.text-content .event1,
+.text-content .event2 {
+  margin: 10px 0px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px 0;
+}
+.text-content .event1 .btn2,
+.text-content .event2 .btn2 {
+  float: left;
+  margin: 5px 15px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color: #7656ac;
+}
+.text-content .event1 .details,
+.text-content .event2 .details {
+  padding: 5px 0px;
+}
 .main-content {
-  z-index: 30;
   max-width: 700px;
   margin: 0 auto;
   color: #ededed;
