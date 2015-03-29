@@ -3,32 +3,74 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>djwedsvani | Where</title>
+	<title>djwedsvani | Contact</title>
 
 	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-	<div class="bg-img">
+<body class="bg-img">
 
-		<div class="main-content"> 
-			
-			<!-- Ganapati Logo -->
-			<div class="head-logo"><img src="img/ganapati.png" alt="Ganapati Image" height="150px" width="150px"></div>
+	<div class="main-content"> 
+		
+		<!-- Ganapati Logo -->
+		<div class="head-logo"><img src="img/ganapati.png" alt="Ganapati Image" height="150px" width="150px"></div>
 
-			<!-- Menus -->
-			<div class="nav-menus">
-				<div class="btn inline-middle home" data-url="home"><a href="index.html">Home</a></div>
-				<div class="btn inline-middle where" data-url="where"><a href="where.html">When And Where</a></div>
-				<!-- <div class="btn inline-middle about" data-url="about"><a href="about.html">About Us</a></div> -->
-				<div class="btn inline-middle contact" data-url="contact"><a href="contact.html">Contact Us</a></div>
-			</div>
+		<!-- Menus -->
+		<div class="nav-menus">
+			<a href="index.html"><div class="btn inline-middle home" data-url="home">Home</div></a>
+			<a href="where.html"><div class="btn inline-middle where" data-url="where">When And Where</div></a>
+			<a href="contact.html"><div class="btn inline-middle contact" data-url="contact">Contact Us</div></a>
+		</div>
 
-			<div class="name">
-				<img src="img/name.png" alt="BRIDE and GROOM Names">
-			</div>
+		<div class="name">
+			<img src="img/name.png" alt="BRIDE and GROOM Names">
+		</div>
 
-			<div class="text-content">
+		<div class="counter">
+			<div id="countdown"></div>
+		</div>
+		
+		<div class="text-content overflow-hidden">
+
+			<div class="text-parent">
+				<div class="contact">
+					<div class="address">
+						<p>ADRESSES</p>
+						<div class="event1">
+							<div class="btn2">MARRIAGE HALL</div>
+							<div class="clearboth details">BHASKAR SAMUDAYA BHAVAN</div>
+							<div class="clearboth details">#78, Loothimath Layout,</div>
+							<div class="clearboth details">Rajdhani Colony, Hubli - 580 024.</div>
+							<div class="clearboth details">Contact : +91 9343102421</div>
+							<div class="clearboth details">LANDMARK : Behind Chavan's marriage hall</div>
+
+						</div>
+						<div class="event1">
+							<div class="btn2">HOME</div>
+							<div class="clearboth details">MANOHAR. B. GHODKE.</div>
+							<div class="clearboth details">#18/2, 4TH MAIN,</div>
+							<div class="clearboth details">NAVA AYODHYA NAGAR</div>
+							<div class="clearboth details">OLD HUBLI - HUBLI 580 024</div>
+							<div class="clearboth details">LANDMARK : Behind Chavan's marriage hall</div>
+						</div>
+					</div>
+					<div class="numbers">
+						<p>CONTACT NUMBERS</p>
+						<div class="event1">
+							<div class="clearboth btn2">HOME</div>
+							<div class="clearboth details">+918362203007</div>
+							<div class="blank"></div>
+							<div class="clearboth btn2">PURUSHOTTAM</div>
+							<div class="clearboth details">+91 9886511836</div>
+							<div class="blank"></div>
+							<div class="clearboth btn2">DHANANJAY</div>
+							<div class="clearboth details">+91 8147442900</div>
+							<div class="blank"></div>
+							<div class="clearboth btn2">KRISHNA</div>
+							<div class="clearboth details">+91 9964259773</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -39,6 +81,7 @@
 	<script>
 		//To make Button Highlight
 		highlightLink();
+		showRemainingTime();
 	</script>
 </body>
 </html>

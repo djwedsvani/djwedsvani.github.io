@@ -175,6 +175,12 @@ table {
 .clearboth {
   clear: both;
 }
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
 .font18px {
   font-size: 18px;
 }
@@ -201,26 +207,26 @@ table {
   text-align: center;
   padding: 20px 0px;
 }
-.nav-menus .btn {
+.nav-menus a {
+  text-decoration: none;
+  outline: none;
+  color: #fefefe;
+  font-size: 18px;
+}
+.nav-menus a:visited,
+.nav-menus a:focus,
+.nav-menus a:active {
+  text-decoration: none;
+  outline: none;
+}
+.nav-menus a .btn {
   padding: 10px;
   border-radius: 5px;
   min-width: 120px;
   margin: 0px 5px;
   font-family: 'Lato';
 }
-.nav-menus .btn a {
-  text-decoration: none;
-  outline: none;
-  color: #fefefe;
-  font-size: 18px;
-}
-.nav-menus .btn a:visited,
-.nav-menus .btn a:focus,
-.nav-menus .btn a:active {
-  text-decoration: none;
-  outline: none;
-}
-.nav-menus .btn:hover {
+.nav-menus a .btn:hover {
   background-color: rgba(130, 96, 189, 0.52);
   cursor: pointer;
 }
@@ -230,6 +236,22 @@ table {
 }
 .name img {
   width: 400px;
+}
+.main-content {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #ededed;
+  font-family: 'Lato';
+}
+.main-content .counter {
+  text-align: center;
+}
+.main-content .counter #countdown {
+  background-color: rgba(130, 96, 189, 0.52);
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 20px;
 }
 .text-content {
   text-align: center;
@@ -280,15 +302,13 @@ table {
   text-decoration: none;
   outline: none;
 }
-.text-content .event1,
-.text-content .event2 {
+.text-content .event1 {
   margin: 10px 0px;
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 10px 0;
 }
-.text-content .event1 .btn2,
-.text-content .event2 .btn2 {
+.text-content .event1 .btn2 {
   float: left;
   margin: 5px 15px;
   padding: 5px 10px;
@@ -296,13 +316,17 @@ table {
   color: #ffffff;
   background-color: #7656ac;
 }
-.text-content .event1 .details,
-.text-content .event2 .details {
+.text-content .event1 .details {
   padding: 5px 0px;
 }
-.main-content {
-  max-width: 700px;
-  margin: 0 auto;
-  color: #ededed;
-  font-family: 'Lato';
+.text-content .blank {
+  padding: 10px;
+}
+.text-content .contact .address {
+  width: 330px;
+  float: left;
+}
+.text-content .contact .numbers {
+  width: 330px;
+  float: right;
 }

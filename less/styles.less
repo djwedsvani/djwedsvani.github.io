@@ -1,3 +1,4 @@
+// @import "flipclock";
 @import "reset";
 
 //variables
@@ -10,6 +11,14 @@
 
 .clearboth{
   clear:both;
+}
+
+.hide{
+  display: none;
+}
+
+.show{
+  display: block;
 }
 
 .font18px{
@@ -49,27 +58,26 @@
 .nav-menus{
   text-align: center;
   padding: 20px 0px;
-  .btn{
-    padding: 10px;
-    border-radius: 5px;
-    min-width: 120px;
-    margin: 0px 5px;
-    font-family: 'Lato';
-    // background-color: #b8a1df;
-    a{
+  a{
+    text-decoration: none;
+    outline:none;
+    color: @nav-text-color;
+    font-size: 18px;
+    &:visited, &:focus, &:active {
       text-decoration: none;
       outline:none;
-      color: @nav-text-color;
-      font-size: 18px;
-      &:visited, &:focus, &:active {
-        text-decoration: none;
-        outline:none;
-      }
     }
-    &:hover{
-      // background-color: @btn-color;
-      background-color: rgba(130, 96, 189, 0.52);
-      cursor: pointer;
+    
+    .btn{
+      padding: 10px;
+      border-radius: 5px;
+      min-width: 120px;
+      margin: 0px 5px;
+      font-family: 'Lato';
+      &:hover{
+        background-color: rgba(130, 96, 189, 0.52);
+        cursor: pointer;
+      }
     }
   }
 }
@@ -79,6 +87,27 @@
   padding: 5px;
   img{
     width:400px;
+  }
+}
+
+//Main Content
+
+.main-content{
+
+  // z-index: 30;
+  max-width:700px;
+  margin:0 auto;
+  color: @tpl-text-color;
+  font-family: 'Lato';
+  .counter{
+    text-align: center;
+    #countdown{
+      background-color: rgba(130, 96, 189, 0.52);
+      display: inline-block;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 20px;
+    }
   }
 }
 
@@ -121,7 +150,6 @@
     text-align: center;
   }
 
-
   .download{
     background-color: @btn-color;
     border-radius: 5px;
@@ -138,7 +166,7 @@
     }
   }
 
-  .event1, .event2{
+  .event1{
     // padding: 10px 0px;
     margin: 10px 0px;
     border: 1px solid #ccc;
@@ -157,15 +185,22 @@
       padding: 5px 0px;
     }
   }
-}
 
-//Main Content
 
-.main-content{
+  .blank{
+    padding: 10px;
+  }
+  //CONTACT PAGE
 
-  // z-index: 30;
-  max-width:700px;
-  margin:0 auto;
-  color: @tpl-text-color;
-  font-family: 'Lato'
+  .contact{
+    .address{
+      width:330px;
+      float: left;
+    }
+    .numbers{
+      width:330px;
+      float: right;
+    }
+  }
+
 }
