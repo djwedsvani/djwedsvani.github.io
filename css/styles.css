@@ -332,6 +332,7 @@ table {
 }
 .text-content .event1 .details {
   padding: 5px 0px;
+  font-size: 18px;
 }
 .text-content .blank {
   padding: 10px;
@@ -343,4 +344,25 @@ table {
 .text-content .contact .numbers {
   width: 330px;
   float: right;
+}
+.footer {
+  padding: 10px;
+  overflow: hidden;
+}
+.footer .copyright {
+  float: left;
+}
+.footer .author {
+  float: right;
+}
+.footer .author a {
+  text-decoration: none;
+  outline: none;
+  color: #7656ac;
+}
+.footer .author a:visited,
+.footer .author a:focus,
+.footer .author a:active {
+  text-decoration: none;
+  outline: none;
 }

@@ -187,6 +187,7 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px 0;
+    
     .btn2{
       float: left;
       margin: 5px 15px;
@@ -198,6 +199,7 @@
 
     .details{
       padding: 5px 0px;
+      font-size: 18px;
     }
   }
 
@@ -217,5 +219,25 @@
       float: right;
     }
   }
+}
 
+.footer{
+  padding: 10px;
+  overflow: hidden;
+  // border: 1px solid red;
+  .copyright{
+    float: left;
+  }
+  .author{
+    float: right;
+    a{
+      text-decoration: none;
+      outline:none;
+      color: @btn-color;
+      &:visited, &:focus, &:active {
+        text-decoration: none;
+        outline:none;
+      }
+    }
+  }
 }
