@@ -244,7 +244,9 @@ table {
   font-family: 'Lato';
 }
 .main-content .counter {
+  margin-top: 10px;
   text-align: center;
+  height: 45px;
 }
 .main-content .counter #countdown {
   background-color: rgba(130, 96, 189, 0.52);
