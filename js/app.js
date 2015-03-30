@@ -27,7 +27,7 @@ var highlightLink = function(){
 
 var showRemainingTime = function(){
 
-    var end = new Date('04/24/2015 05:00 PM');
+    var end = new Date('04/24/2015 07:00 PM');
     var _second = 1000;
     var _minute = _second * 60;
     var _hour = _minute * 60;
