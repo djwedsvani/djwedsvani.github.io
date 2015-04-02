@@ -14,14 +14,15 @@ $(document).ready(function(){
 var highlightLink = function(){
 
     var path = window.location.pathname;
-
     $('.nav-menus a').removeClass('active-url');
-        if (path.indexOf('index.html') > 0)
+        if (path.indexOf('index.html') > 0 )
             $('[data-url=home]').addClass('active-url');
         else if(path.indexOf('where.html') > 0)
             $('[data-url=where]').addClass('active-url');
         else if(path.indexOf('contact.html') > 0)
             $('[data-url=contact]').addClass('active-url');
+        else
+            $('[data-url=home]').addClass('active-url');
 };
 
 
